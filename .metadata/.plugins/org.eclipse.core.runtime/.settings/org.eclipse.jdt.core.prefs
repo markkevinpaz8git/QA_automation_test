@@ -1,0 +1,15 @@
+JRE_LIB=C\:/tools/Corretto/jdk17.0.9_8/lib/jrt-fs.jar
+JRE_SRC=C\:/tools/Corretto/jdk17.0.9_8/lib/src.zip
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/eclipse/
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/tools/Corretto/jdk17.0.9_8/lib/jrt-fs.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/tools/Corretto/jdk17.0.9_8/lib/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/eclipse/plugins/org.junit_4.13.2.v20240929-1000.jar
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/mpaz/.m2/repository
+org.eclipse.jdt.core.classpathVariable.TESTNG_HOME=C\:/eclipse/configuration/org.eclipse.osgi/978/0/.cp
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=21
+org.eclipse.jdt.core.compiler.compliance=21
+org.eclipse.jdt.core.compiler.release=enabled
+org.eclipse.jdt.core.compiler.source=21

@@ -1,0 +1,17 @@
+    #Examples: 
+      #| name  | value | status  |
+      #| name1 |     5 | success |
+      #| name2 |     7 | Fail    |
+
+      
+Feature: As a newspaper reader I want to login and check my page
+
+    Scenario:  Login Successfully
+        Given the user is on the Newspaper login page
+        When the user enters valid credentials
+        And clicks on the login button
+        And the user should see their User ID
+        
+  
+        
+        

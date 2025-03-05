@@ -1,0 +1,52 @@
+package LoginStepDef;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import static org.junit.Assert.assertTrue;
+
+public class NewspaperLoginSteps {
+    WebDriver driver;
+
+    @Given("the user is on the Newspaper login page")
+    public void user_is_on_login_page() {
+    	String driverPath = System.getProperty("user.dir");
+        System.setProperty("webdriver.chrome.driver", driverPath + "/src/main/resources/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.navigate().to("https://www.newspapers.com/");
+        driver.manage().window().maximize();
+        driver.findElement(By.name("Sign In")).click();
+
+    }
+
+    @When("the user enters valid credentials")
+    public void user_enters_valid_credentials() {
+        WebElement username = driver.findElement(By.id("username"));
+        WebElement password = driver.findElement(By.id("password"));
+        username.sendKeys("testuser@example.com");
+        password.sendKeys("Test@12345");
+    }
+
+    @When("clicks on the login button")
+    public void user_clicks_the_login_button() {
+        driver.findElement(By.id("login-button")).click();
+    }
+
+    @Then("the user should be redirected to the homepage")
+    public void user_is_redirected_to_homepage() {
+        assertTrue(driver.getCurrentUrl().contains("homepage"));
+    }
+
+    @Then("the user should see a welcome message")
+    public void user_see_a_welcome_message() {
+        WebElement welcomeMessage = driver.findElement(By.className("welcome-msg"));
+        assertTrue(welcomeMessage.getText().contains("Welcome"));
+        driver.quit();
+    }
+}
+

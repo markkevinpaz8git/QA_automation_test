@@ -1,0 +1,10 @@
+package com.test;
+
+import org.junit.runner.RunWith;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(tags= "@user1", features = "/SauceDemoLoginBDD/src/test/resources/Features", glue = "LoginStepDef", plugin = { "pretty"})
+public class RunCucumber{
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCucumber (1)" project="SauceDemoLoginBDD" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.test.RunCucumber" time="5.271">
+    <testsuite name="As a newspaper reader I want to login and check the" time="5.271">
+      <testcase name="Login Successfully to the saucedemo homepage #1" classname="As a newspaper reader I want to login and check the" time="5.271"/>
+    </testsuite>
+  </testsuite>
+</testrun>

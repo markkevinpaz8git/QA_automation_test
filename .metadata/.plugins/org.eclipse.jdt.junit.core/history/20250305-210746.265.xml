@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunCucumber (1)" project="SauceDemoLoginBDD" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.test.RunCucumber" time="3.238">
+    <testsuite name="As a newspaper reader I want to login and check the" time="3.238">
+      <testcase name="Login Successfully to the saucedemo homepage #1" classname="As a newspaper reader I want to login and check the" time="3.238">
+        <failure>java.lang.AssertionError: Failed to Login.&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:42)&#13;
+	at LoginStepDef.SauceDemoLoginSteps.user_is_redirected_to_homepage(SauceDemoLoginSteps.java:47)&#13;
+	at ✽.the user is redirected to the homepage(file:///C:/Workspace-test/SauceDemoLoginBDD/src/test/resources/Features/SauceDemoLogin.feature:8)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
